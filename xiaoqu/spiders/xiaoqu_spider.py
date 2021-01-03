@@ -8,7 +8,7 @@ from scrapy.http import Request
 import json
 
 class XiaoquSpiderSpider(scrapy.Spider):
-    name = 'xiaoqu_spider'
+    name = 'xiaoqu_spider_go'
     # 获取所有城市链接
     url = 'https://tc.loupan.com/index.php/jsdata/common?_=1579245949843'
     response = requests.get(url).text

@@ -80,7 +80,6 @@ COOKIES_ENABLED = False
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'xiaoqu.pipelines.XiaoquRedisPipeline': 1,
-    #'xiaoqu.pipelines.ExcelPipeline': 301,
     'xiaoqu.pipelines.MysqlPipeline': 2,
 }
 
@@ -115,7 +114,7 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
     'Upgrade-Insecure-Requests': 1,
 }
-#LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'ERROR'
 RETRY_ENABLED = False
 #DOWNLOAD_TIMEOUT = 10
 
