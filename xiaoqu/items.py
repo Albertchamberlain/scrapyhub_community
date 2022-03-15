@@ -28,7 +28,7 @@ class XiaoquItem(scrapy.Item):
     greening_rate = scrapy.Field()  # 绿化率
     property_company = scrapy.Field()  # 物业公司
     developers = scrapy.Field()  # 开发商
-    distracted_machong = scrapy.Field()  # 与麻涌之间的距离
+    distracted_machong = scrapy.Field()  # 与学校之间的距离
     returnwejd =scrapy.Field()  # 目的地天气
     returntejd = scrapy.Field() #目的地温度
     report_time = scrapy.Field() #获取天气时间
