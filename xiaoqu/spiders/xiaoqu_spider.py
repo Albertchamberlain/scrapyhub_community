@@ -156,7 +156,7 @@ class XiaoquSpiderSpider(scrapy.Spider):
 
     # 调用经高德地图API，获取经纬度与详细地址并计算出与麻涌之间的距离,包括天气
     def location(self, detail_address):
-        url = "https://restapi.amap.com/v3/geocode/geo?address=" + detail_address + "&key=7a6857fa8cc1291318c0839f4055e904"
+        url = "https://restapi.amap.com/v3/geocode/geo?address=" + detail_address + "&key=********************************"
         response = requests.get(url).json()
         geocodes = response['geocodes']
         for geocode in geocodes:
@@ -166,7 +166,7 @@ class XiaoquSpiderSpider(scrapy.Spider):
 
             # get目的地天气
             url = 'https://restapi.amap.com/v3/weather/weatherInfo'  # 高德API天气地址
-            paramsw = {'key': 'ea214e651d3a1a8d772a39a518a1fd5d',  # 参数1：个人申请的高德密钥
+            paramsw = {'key': '*****************************************',  # 参数1：个人申请的高德密钥
                       'city': str(adcode),  # 参数2：目的地天气
                       'extensions': 'base'}  # 参数3：返回结果控制选项，必填项，base:返回基本信息；all：返回全部信息
             try:
@@ -186,8 +186,8 @@ class XiaoquSpiderSpider(scrapy.Spider):
 
             # 计算两经纬度间驾车距离
             url = 'https://restapi.amap.com/v3/direction/driving'  # 高德API驾车路径规划服务地址
-            params = {'key': '2385e343716fddbc98f605952dfee8a7',  # 参数1：个人申请的高德密钥
-                      'origin': '113.582404,23.062876',  # 参数2：起始点的经纬度坐标,初始化为麻涌
+            params = {'key': '*****************************************',  # 参数1：个人申请的高德密钥
+                      'origin': '145.5325256,35.1231416',  # 参数2：起始点的经纬度坐标,初始化为学校地址
                       'destination': str(coord),  # 参数3：目的地的经纬度坐标
                       'extensions': 'base'}  # 参数4：返回结果控制选项，必填项，base:返回基本信息；all：返回全部信息
             try:
@@ -204,11 +204,3 @@ class XiaoquSpiderSpider(scrapy.Spider):
             local = {'coord': coord, 'province': province, 'city': city, 'district': district,'distracted_machong': returnjd,'returnwejd': returnwejd,'returntejd': returntejd
                      ,'report_time': report_time}
             return local
-
-
-
-
-
-
-# 麻涌地区经纬度113.582404,23.062876
-#  117.947981,28.466025
