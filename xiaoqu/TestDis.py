@@ -3,7 +3,7 @@ import json
 
 def get_distance(origin,destination): #设置函数计算两经纬度间驾车距离
     url = 'https://restapi.amap.com/v3/direction/driving'  # 高德API驾车路径规划服务地址
-    params = {'key': '2385e343716fddbc98f605952dfee8a7',  # 参数1：个人申请的高德密钥
+    params = {'key': '********************************',  # 参数1：个人申请的高德密钥
               'origin': origin, # 参数2：起始点的经纬度坐标
               'destination':destination, # 参数3：目的地的经纬度坐标
               'extensions':'base'} # 参数4：返回结果控制选项，必填项，base:返回基本信息；all：返回全部信息
@@ -20,7 +20,7 @@ import time
 
 start = time.process_time() #程序开始计时
 
-result=int(get_distance("113.582404,23.062876","117.947981,28.466025"))/1000  #距离单位转换为公里
+result=int(get_distance("125.346404,29.034756","236.247568,35.656785"))/1000  #距离单位转换为公里
 
 end = time.process_time() #程序结束计时
 
