@@ -109,7 +109,7 @@ headers = {
     'Accept-Language': 'zh-CN,zh;q=0.9,en;q=0.8',
     'Cache-Control': 'max-age=0',
     'Connection': 'keep-alive',
-    'Cookie': '__customer_trace_id=506C2084-CE42-4196-9DB9-D9224A6AE91F; UM_distinctid=176be98f9ce339-0753a39179b28-c791039-1fa400-176be98f9cf14c; _ga=GA1.2.1641211207.1609515467; _gid=GA1.2.1886420305.1609515467; watched_houses36=7067925; watched_houses4611=7100458; watched_houses2098=6180368; loadDomain=https%3A%2F%2Fsz.loupan.com%2F; loupan_user_session=a%3A5%3A%7Bs%3A10%3A%22session_id%22%3Bs%3A32%3A%225bb3815e7018cdd126a5163af6e41171%22%3Bs%3A10%3A%22ip_address%22%3Bs%3A13%3A%2214.16.134.194%22%3Bs%3A10%3A%22user_agent%22%3Bs%3A114%3A%22Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F87.0.4280.88+Safari%2F537.36%22%3Bs%3A13%3A%22last_activity%22%3Bi%3A1609601263%3Bs%3A9%3A%22user_data%22%3Bs%3A0%3A%22%22%3B%7D27fad24db52ba4906bc500879b493274; is_esf_cooperate=0; Hm_lvt_c07a5cf91cdac070faa1e701f45995a8=1609515466,1609570781,1609588541,1609601286; token=6e16f4f673f01dfce71cb82ea5588ea1; userInfo=%7B%22id%22%3A229015%2C%22phone%22%3A%22137*****038%22%2C%22username%22%3Anull%2C%22email%22%3Anull%2C%22status%22%3A1%2C%22sex%22%3A0%2C%22real_name%22%3A%22%22%2C%22card_type%22%3A0%2C%22card_no%22%3A%22%22%2C%22avatar%22%3A%22%22%2C%22is_manager%22%3A0%2C%22roles%22%3A%22%22%2C%22deleted_at%22%3Anull%2C%22created_at%22%3A%222021-01-02T23%3A28%3A53.000%2B08%3A00%22%2C%22updated_at%22%3A%222021-01-02T23%3A28%3A53.000%2B08%3A00%22%2C%22import%22%3A0%2C%22has_password%22%3A0%2C%22platforms%22%3A%5B%7B%22platform_id%22%3A10000%2C%22name%22%3A%22%E6%A5%BC%E7%9B%98%E7%BD%91PC%E7%AB%AF%22%7D%2C%7B%22platform_id%22%3A20000%2C%22name%22%3A%22%E6%A5%BC%E7%9B%98%E7%BD%91m%E7%AB%AF%22%7D%5D%7D; _gat_gtag_UA_180343956_1=1; Hm_lpvt_c07a5cf91cdac070faa1e701f45995a8=1609601351',
+    'Cookie': ,
     'Host': 'sz.loupan.com',
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36',
     'Upgrade-Insecure-Requests': 1,
@@ -118,7 +118,7 @@ LOG_LEVEL = 'ERROR'
 RETRY_ENABLED = False
 #DOWNLOAD_TIMEOUT = 10
 
-MYSQL_HOST = '106.52.8.85'
+MYSQL_HOST = '123.43.2.72'
 MYSQL_DATABASE = 'jobspider'
 MYSQL_USER = 'root'
 MYSQL_PASSWORD = 'houboxue'
